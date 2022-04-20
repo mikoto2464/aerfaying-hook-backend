@@ -5,14 +5,17 @@ plugins {
 }
 
 group = 'net.mikoto'
-version = '0.0.1-SNAPSHOT'
+version = '1.0.0'
 sourceCompatibility = '17'
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
+    implementation 'net.mikoto.pixiv:pixiv-api:1.3.6'
+    implementation 'net.mikoto.pixiv:pixiv-forward-connector:1.0.1'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'com.squareup.okhttp3:okhttp:4.9.3'
